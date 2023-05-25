@@ -25,7 +25,7 @@
             align-items: center;
         }
         .left-web {
-            width: 50%;
+            width: 60%;
             height: 100vh;
             display: flex;
             justify-content: center;
@@ -34,7 +34,7 @@
             
         }
         .right-web {
-            width: 50%;
+            width: 40%;
             height: 100vh;
             background-color: rgb(208, 224, 231);
             display: flex;
@@ -47,21 +47,34 @@
         .welcome-text {
             font-size: 45px;
             font-family: sans-serif;
+            -webkit-text-stroke:2px rgb(69, 98, 112);
+            color: transparent;
         }
         .left-container {
             position: relative;
             bottom: 10px;
-            padding: 0 30px;
+            padding: 0 50px;
             display: flex;
             flex-direction: column;
             align-items: start;
             justify-content: center;
         }
+        .right-container {
+            position: relative;
+            bottom: 10px;
+            padding: 0 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+        }
         .sub-welcome {
             font-size: 30px;
         }
         .connected {
-            background-color: rgb(157, 181, 187);
+            background-color: rgb(208, 224, 231);
             padding: 20px;
             border-radius: 10px;
             display: flex;
@@ -70,8 +83,8 @@
             margin-top: 20px;
         }
         .active-circle {
-            width: 15px;
-            height: 15px;
+            width: 10px;
+            height: 10px;
             background-color: rgb(47, 163, 78);
             box-shadow: 0 0 15px rgb(0, 255, 110);
             
@@ -80,6 +93,29 @@
         }
         .sub-welcome {
             margin-top: 10px;
+            color: rgb(124, 123, 123);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+
+        input[type=text],input[type=password] {
+            padding: 15px;
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            margin:5px 0;
+
+        }
+        .LoginBtn {
+            background-color: rgb(0, 157, 255);
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
         }
     </style>
 </head>
@@ -96,7 +132,14 @@
             </div>
         </div>
         <div class="right-web">
-            
+            <div class="right-container">
+                <form action="">
+                    <h2>Sign in</h2>
+                    <input type="text" placeholder="username">
+                    <input type="password" name="" id="" placeholder="Password">
+                    <button type="submit" class="LoginBtn" name="btn">Login</button>
+                </form>
+            </div>
         </div>
     </div>
 
