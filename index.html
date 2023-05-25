@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FSH</title>
+    <link rel="stylesheet" href="assets/Fontawesome/all.min.css">
     <style>
         @font-face {
             font-family: Lato;
@@ -98,7 +99,7 @@
         form {
             display: flex;
             flex-direction: column;
-            width: 50%;
+            width: 70%;
         }
 
         input[type=text],input[type=password] {
@@ -107,6 +108,8 @@
             border-radius: 5px;
             border: none;
             outline: none;
+            font-size: 15px;
+            font-family: sans-serif;
             margin:5px 0;
 
         }
@@ -116,7 +119,44 @@
             padding: 10px;
             border-radius: 5px;
             color: white;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: .3s ease;
         }
+        .LoginBtn:hover {
+            background-color: rgb(20, 113, 171);
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .signinTitle {
+            margin: 10px 0;
+        }
+        .signupLink {
+            margin:10px 0;
+        }
+        .signupLink-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .infoIcon {
+            font-size: 20px;
+            color: rgb(163, 171, 173);
+            cursor: pointer;
+            transition: .3s ease;
+        }
+        .infoIcon:hover {
+            font-size: 20px;
+            color: rgb(116, 123, 125);
+            cursor: pointer;
+        }
+
     </style>
 </head>
 <body>
@@ -134,15 +174,22 @@
         <div class="right-web">
             <div class="right-container">
                 <form action="">
-                    <h2>Sign in</h2>
+                    <h2 class="signinTitle">Sign in</h2>
                     <input type="text" placeholder="username">
                     <input type="password" name="" id="" placeholder="Password">
                     <button type="submit" class="LoginBtn" name="btn">Login</button>
+                    <div class="signupLink-wrapper">
+                        <p><i class="fa fa-circle-info infoIcon"></i></p>
+                        <p class="signupLink">Don't have account? <a href="#">Sign Up</a></p>
+                    </div>
+                   
                 </form>
             </div>
         </div>
     </div>
 
+
+    <script src="assets/Fontawesome/all.min.js"></script>
     
 </body>
 </html>
